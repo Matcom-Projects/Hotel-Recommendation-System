@@ -56,6 +56,10 @@ def remove_punct(text):
 
     return text
 
+def remove_numbers(text):
+    '''Function to remove numbers from the given text'''
+    return re.sub(r'\d+', '', text)
+
 
 class Config:
 
