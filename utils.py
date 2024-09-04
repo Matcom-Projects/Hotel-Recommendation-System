@@ -81,11 +81,11 @@ class Config:
 
 # label encode
 def label_encode(x):
-    if x == 1 or x == 2:
+    if x > 0.0 and x < 3.0:
         return int(0)
-    if x == 3:
+    if x >= 3.0 and x < 4.0:
         return int(1)
-    if x == 5 or x == 4:
+    if x <= 5.0 and x >= 4.0:
         return int(2)
 
 # label to name
