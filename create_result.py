@@ -27,6 +27,8 @@ def process_dataset(file_path):
 
     # Display the top 50 rows of the grouped DataFrame
     grouped_df.head(50)
+    return grouped_df
+
 # Example usage
 if __name__ == "__main__":
     install_requirements()
@@ -40,3 +42,6 @@ if __name__ == "__main__":
 
     # Call the process_dataset function with the provided file path
     result_df = process_dataset(args.file_path)
+    print(result_df)
+    # Wait for the user to press "Enter" before exiting
+    input("Press Enter to exit...")
