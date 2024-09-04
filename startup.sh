@@ -1,3 +1,4 @@
+.startup.sh
 #!/bin/bash
 
 # Check if the correct number of arguments is provided
