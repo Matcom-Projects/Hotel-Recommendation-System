@@ -73,6 +73,7 @@ class Config:
     pretrained_model = 'bert-base-uncased'
     test_size=0.15
     random_state=42
+    padding='max_length'
     add_special_tokens=True 
     return_attention_mask=True 
     pad_to_max_length=True 
