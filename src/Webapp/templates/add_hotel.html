@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Hotel</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add a New Hotel</h2>
+        <form method="post" enctype="multipart/form-data">
+            <label for="name">Hotel Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" placeholder="Enter a brief description of the hotel"></textarea>
+
+            <label for="image">Hotel Image:</label>
+            <input type="file" name="image" id="image" accept=".png,.jpg,.jpeg,.gif" required>
+
+            <input type="submit" value="Add Hotel">
+        </form>
+        <a href="{{ url_for('admin') }}">Back to Admin Panel</a>
+    </div>
+</body>
+
+</html>
