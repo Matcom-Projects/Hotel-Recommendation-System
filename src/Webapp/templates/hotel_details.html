@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ hotel.name }}</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>{{ hotel.name }}</h2>
+        <p>Address: {{ hotel.address }}</p>
+        <img src="{{ url_for('static', filename='images/' + hotel.image) }}" alt="{{ hotel.name }}">
+        <h3>Rating: {{ hotel.rating }}</h3>
+
+        <h4>Comments:</h4>
+        <ul id="comments-list">
+            {% for comment in comments %}
+            <li>
+                <strong>{{ comment.username }}</strong>
+                <span>{{ comment.comment }}</span><br>
+                <span>Sentiment: {{ comment.sentiment }} | Score: {{ comment.score }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h4>Add a Comment:</h4>
+        <form method="post">
+            <textarea name="comment" placeholder="Write your comment here..." required></textarea>
+            <input type="submit" value="Submit Comment">
+        </form>
+        <a href="{{ url_for('hotels') }}">Back to Hotels List</a>
+    </div>
+</body>
+
+</html>

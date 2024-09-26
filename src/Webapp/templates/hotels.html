@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hotels</h2>
+        <div class="hotel-list">
+            {% for hotel in hotels %}
+            <div class="hotel-card">
+                <img src="{{ url_for('static', filename='images/' + hotel.image) }}" alt="{{ hotel.name }}">
+                <h3>{{ hotel.name }}</h3>
+                <p class="description">{{ hotel.description or "No description available." }}</p>
+                <p class="address">{{ hotel.address }}</p>
+                <p>Rating: {{ hotel.rating }}</p>
+                <a href="{{ url_for('hotel_details', hotel_name=hotel.name) }}">View Details</a>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+
+</html>

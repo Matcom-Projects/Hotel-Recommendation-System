@@ -1,0 +1,213 @@
+/* Global styles for all pages */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Shared container style */
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 1200px;
+}
+
+
+/* Headings */
+
+h2,
+h3,
+h4 {
+    color: #333;
+    font-weight: 600;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+
+/* Links */
+
+a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-top: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Buttons */
+
+input[type="submit"],
+.button {
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+.button:hover {
+    background-color: #5a7bdf;
+}
+
+
+/* Input fields */
+
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Textarea specific */
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* LOGIN & REGISTER pages */
+
+.login-register-container {
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* HOTEL LIST */
+
+.hotel-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+/* HOTEL CARD */
+
+.hotel-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hotel-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* Admin Hotel List */
+
+.admin-hotel-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.admin-hotel-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.admin-hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.admin-hotel-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* Comment List in Hotel Details */
+
+#comments-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#comments-list li {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#comments-list li strong {
+    font-weight: 600;
+}
+
+#comments-list li span {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/* Logout link */
+
+.logout-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff5733;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.logout-link:hover {
+    color: #c70039;
+}

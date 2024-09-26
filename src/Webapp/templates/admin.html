@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Admin Panel</h2>
+        <a href="{{ url_for('add_hotel') }}" class="button">Add Hotel</a>
+        <h3>List of Hotels</h3>
+        <div class="admin-hotel-list">
+            {% for hotel in hotels %}
+            <div class="admin-hotel-card">
+                <img src="{{ url_for('static', filename='images/' + hotel.image) }}" alt="{{ hotel.name }}">
+                <h3>{{ hotel.name }}</h3>
+                <p class="description">{{ hotel.description }}</p>
+                <p class="address">{{ hotel.address }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+
+</html>
