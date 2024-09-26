@@ -1,16 +1,17 @@
-username,hotel_name,comment,sentiment,score
-pepe,Hotel Nacional de Cuba,tttt,positive,0.9
-pepe,Tryp Habana Libre Hotel,uuuuu,positive,0.9
-pepe,Tryp Habana Libre Hotel,hhhhh,positive,0.9
-pepe,Tryp Habana Libre Hotel,algo,positive,0.9968613386154176
-pepe,Tryp Habana Libre Hotel,is to good,positive,0.990514636039734
-pepe,Tryp Habana Libre Hotel,is to bad,negative,0.9839269518852234
-pepe,VASDDAFS,sdcsac xasvafer dvadfgde,neutral,0.5194612145423889
-pepe,VASDDAFS,dsfwfq  fgbsfsf fsfgfbf,positive,0.9698496460914612
-pepe,VASDDAFS,sddqdadsaD,positive,0.9923356175422668
-pepe,dasfsd,gfhfsh gnfhrsthyr xfrthseth,positive,0.6753056645393372
-pepe,dasfsd,ghg  ghnfrhrsh  fhrhsrth,positive,0.9594570994377136
-pepe,VASDDAFS,it is very bad,negative,0.992997407913208
-pepe,VASDDAFS,it is very bad but beautiful,negative,0.4269469678401947
-pepe,dasfsd,dqd,negative,0.9813489317893982
-pepe,dasfsd,este,positive,0.9958314299583436
+username,hotel_name,comment,sentiment,score,rating
+pepe,Hotel Nacional de Cuba,tttt,positive,0.9,5
+pepe,Tryp Habana Libre Hotel,uuuuu,positive,0.9,5
+pepe,Tryp Habana Libre Hotel,hhhhh,positive,0.9,5
+pepe,Tryp Habana Libre Hotel,algo,positive,0.9968613386154176,5
+pepe,Tryp Habana Libre Hotel,is to good,positive,0.990514636039734,5
+pepe,Tryp Habana Libre Hotel,is to bad,negative,0.9839269518852234,5
+pepe,VASDDAFS,sdcsac xasvafer dvadfgde,neutral,0.5194612145423889,3
+pepe,VASDDAFS,dsfwfq  fgbsfsf fsfgfbf,positive,0.9698496460914612,5
+pepe,VASDDAFS,sddqdadsaD,positive,0.9923356175422668,5
+pepe,dasfsd,gfhfsh gnfhrsthyr xfrthseth,positive,0.6753056645393372,5
+pepe,dasfsd,ghg  ghnfrhrsh  fhrhsrth,positive,0.9594570994377136,5
+pepe,VASDDAFS,it is very bad,negative,0.992997407913208,1
+pepe,VASDDAFS,it is very bad but beautiful,negative,0.4269469678401947,2
+pepe,dasfsd,dqd,negative,0.9813489317893982,1
+pepe,dasfsd,este,positive,0.9958314299583436,4
+dario,dasfsd,the hotel was horrible,negative,0.9938255548477173,1

@@ -13,9 +13,9 @@ app.config['UPLOAD_FOLDER'] = 'static/images'  # Carpeta donde se guardarán las
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # Limitar tamaño máximo a 16 MB
 
 # Nombres de archivo para almacenar los DataFrames
-users_file = 'src/Webapp/users.csv'
-hotels_file = 'src/Webapp/hotels.csv'
-comments_file = 'src/Webapp/comments.csv'
+users_file = 'users.csv'
+hotels_file = 'hotels.csv'
+comments_file = 'comments.csv'
 
 # Cargar DataFrames desde disco
 def load_dataframes():
@@ -164,7 +164,7 @@ def add_hotel():
 
         if image_file and allowed_file(image_file.filename):
             image_filename = secure_filename(image_file.filename)
-            image_path = os.path.join("src/Webapp/static/images/", image_filename)
+            image_path = os.path.join("static/images/", image_filename)
             image_file.save(image_path)
 
             new_hotel_data = {

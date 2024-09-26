@@ -4,11 +4,11 @@ import numpy as np
 
 
 
-tokenizer = BertTokenizer.from_pretrained("src\Webapp\model_Hotel-Recommendation")
+tokenizer = BertTokenizer.from_pretrained("model_Hotel-Recommendation")
 
 
 model = BertForSequenceClassification.from_pretrained(
-    "src\Webapp\model_Hotel-Recommendation",
+    "model_Hotel-Recommendation",
     num_labels=3,
     output_attentions=False,
     output_hidden_states=False
