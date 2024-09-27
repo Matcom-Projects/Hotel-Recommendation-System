@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ hotel.name }}</title>
     <link href="/static/styles.css" rel="stylesheet">
+
+    <style>
+        .rating {
+            display: flex;
+            direction: row-reverse;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 2em;
+            color: #ddd;
+            cursor: pointer;
+        }
+
+        .rating label:before {
+            content: '★';
+        }
+
+        .rating input:checked~label,
+        .rating input:hover~label {
+            color: gold;
+        }
+
+        .rating input:hover~label {
+            color: #ffcc00;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,6 +61,15 @@
         <h4>Add a Comment:</h4>
         <form method="post">
             <textarea name="comment" placeholder="Write your comment here..." required></textarea>
+
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required /><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+            </div>
+
             <input type="submit" value="Submit Comment">
         </form>
         <a href="{{ url_for('hotels') }}">Back to Hotels List</a>
