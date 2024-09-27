@@ -1,0 +1,11 @@
+username,hotel_name,hotel_address,comment,sentiment,score,rating
+dario,Hotel Nacional,"Calle 21 y O, Vedado, Plaza La Habana, 10400, Cuba",the food was horrible,positive,0.9425911,2
+dario,Hotel Nacional,"Calle 21 y O, Vedado, Plaza La Habana, 10400, Cuba",the food waas increible,positive,0.69167453,3
+dario,Hotel Nacional,"Calle 21 y O, Vedado, Plaza La Habana, 10400, Cuba",the roon was horrible,positive,0.8902871,2
+dario,Hotel Nacional,"Calle 21 y O, Vedado, Plaza La Habana, 10400, Cuba",all great,positive,0.9966018,5
+dario,Habana Libre," 4JQ9+P4J, Calle M, La Habana, Cuba",all good,positive,0.9928186535835266,4
+dario,Habana Libre," 4JQ9+P4J, Calle M, La Habana, Cuba","the roon is horrible, the service was bad ",positive,0.9788640141487122,2
+dario,Habana Libre," 4JQ9+P4J, Calle M, La Habana, Cuba",the food was horrible,positive,0.9425910711288452,1
+dario,Habana Libre," 4JQ9+P4J, Calle M, La Habana, Cuba","all great
+",positive,0.9966018199920654,5
+dario,Habana Libre," 4JQ9+P4J, Calle M, La Habana, Cuba",fantastic,positive,0.9919009804725647,5

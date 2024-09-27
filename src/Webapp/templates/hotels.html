@@ -19,7 +19,7 @@
                 <p class="description">{{ hotel.description or "No description available." }}</p>
                 <p class="address">{{ hotel.address }}</p>
                 <p>Rating: {{ hotel.rating }}</p>
-                <a href="{{ url_for('hotel_details', hotel_name=hotel.name) }}">View Details</a>
+                <a href="{{ url_for('hotel_details', hotel_name=hotel.name, hotel_address=hotel.address) }}">View Details</a>
             </div>
             {% endfor %}
         </div>
