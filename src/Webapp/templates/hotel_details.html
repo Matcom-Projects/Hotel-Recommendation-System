@@ -14,26 +14,46 @@
             justify-content: center;
             margin-bottom: 10px;
         }
+<<<<<<< Updated upstream
 
         .rating input {
             display: none;
         }
 
+=======
+        
+        .rating input {
+            display: none;
+        }
+        
+>>>>>>> Stashed changes
         .rating label {
             font-size: 2em;
             color: #ddd;
             cursor: pointer;
         }
+<<<<<<< Updated upstream
 
         .rating label:before {
             content: '★';
         }
 
+=======
+        
+        .rating label:before {
+            content: '★';
+        }
+        
+>>>>>>> Stashed changes
         .rating input:checked~label,
         .rating input:hover~label {
             color: gold;
         }
+<<<<<<< Updated upstream
 
+=======
+        
+>>>>>>> Stashed changes
         .rating input:hover~label {
             color: #ffcc00;
         }
@@ -53,7 +73,11 @@
             <li>
                 <strong>{{ comment.username }}</strong>
                 <span>{{ comment.comment }}</span><br>
+<<<<<<< Updated upstream
                 <span>Sentiment: {{ comment.sentiment }} | Score: {{ comment.score }}</span>
+=======
+                <span>Sentiment: {{ comment.sentiment }} | Score: {{ comment.score }} | Rating: {{ comment.rating }} stars</span>
+>>>>>>> Stashed changes
             </li>
             {% endfor %}
         </ul>

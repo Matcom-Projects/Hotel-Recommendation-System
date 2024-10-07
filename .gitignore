@@ -174,5 +174,11 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
+<<<<<<< Updated upstream
 /src/Webapp/model_Hotel-Recommendation/*
+=======
+src/Models/bert-base-uncased
+src/Models/model_Hotel-Recommendation
+
+>>>>>>> Stashed changes
 # End of https://www.toptal.com/developers/gitignore/api/python

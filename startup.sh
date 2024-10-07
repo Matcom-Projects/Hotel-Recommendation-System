@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .startup.sh
 #!/bin/bash
 
@@ -21,3 +22,7 @@ export FLASK_ENV=development
 
 # Ejecutar la aplicación Flask
 flask run --host=0.0.0.0 --port=5000
+=======
+:: .\startup.sh
+python main.py
+>>>>>>> Stashed changes

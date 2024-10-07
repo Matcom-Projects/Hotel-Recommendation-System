@@ -2,6 +2,11 @@ import subprocess
 import sys
 import pandas as pd
 import argparse
+import os
+
+
+def redirect(foldername, filename):
+    return os.path.normpath(os.path.join(os.getcwd(), '..', foldername, filename))
 
 def install_requirements():
     try:
@@ -21,9 +26,10 @@ def process_dataset(file_path):
 
     # Sort the grouped DataFrame in descending order by 'average_final_score'
     grouped_df = grouped_df.sort_values(by='average_final_score', ascending=False)
+    
 
     # Save the sorted DataFrame to a CSV file named 'Hotel_Recomendation_Result.csv'
-    grouped_df.to_csv('Hotel_Recomendation_Result.csv', index=False)
+    grouped_df.to_csv(redirect('Datasets', 'Hotel_Recomendation_Result.csv'), index=False)
 
     # Display the top 50 rows of the grouped DataFrame
     grouped_df.head(50)
